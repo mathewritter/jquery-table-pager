@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="/jQueryTablePager.js" type="text/javascript"></script>
+    <link href="Site.css" rel="stylesheet" />
+</head>
+<body>
+    <table id="table1" class="table-1">
+        <thead>
+            <tr>
+                <th>Col1</th>
+                <th>Col2</th>
+                <th>Col3</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <br />
+    <table id="table2" class="table-2">
+        <thead>
+            <tr>
+                <th>Col1</th>
+                <th>Col2</th>
+                <th>col3</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>
+<script type="text/javascript">
+    for (i = 0; i < 300; i++) {
+        $('#table1 > tbody:last').append('<tr><td>' + (i+1) + '</td><td>' + (i+2) + '</td><td>' + (i+3) + '</td></tr>');
+    }
+    $('#table1').paginateTable(20, 10, true);
+    for (i = 0; i < 800; i++) {
+        $('#table2 > tbody:last').append('<tr><td>' + (i + 1) + '</td><td>' + (i + 2) + '</td><td>' + (i + 3) + '</td></tr>');
+    }
+    $('#table2').paginateTable(30, 10, false);
+</script>

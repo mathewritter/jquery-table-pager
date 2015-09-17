@@ -1,0 +1,43 @@
+﻿.table-page-number {
+    color: #0971B2;
+    background-color: white;
+    border-radius: 3px 3px 3px;
+    border: 1px solid lightgray;
+    margin: 0 2px 0 2px;
+    padding: 10px;
+}
+
+    .table-page-number:hover {
+        border: 1px solid #096bb4;
+    }
+
+.clickable {
+    cursor: pointer;
+}
+
+.active {
+    background-color: #0971B2;
+    color: white;
+    text-shadow: 0 0 2px #333;
+    border: 1px solid #096bb4;
+}
+
+.table-pager {
+    margin: 6px 0 6px 0;
+}
+
+.table-pager-navbutton {
+    background-color: white;
+    background-image: radial-gradient(#1485CC, #0971B2);
+    border-radius: 3px 3px 3px;
+    border: 1px solid #096bb4;
+    color: white;
+    text-shadow: 0 0 2px #333;
+    border: none;
+    padding: 10px;
+}
+table {
+    border: 1px solid black;
+    border-radius: 3px 3px 3px;
+
+}
